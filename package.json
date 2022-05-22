@@ -1,0 +1,22 @@
+{
+  "name": "project-name",
+  "version": "1.0.0",
+  "description": "To make it easy for you to get started with GitLab, here's a list of recommended next steps.",
+  "main": "index.js",
+  "scripts": {
+    "watch-sass": "sass -w assets/css/sass/index.scss assets/css/index.css  ",
+    "browsersync": "browser-sync start --server --files='**/*'",
+    "watch": "npm run watch-less & npm run browsersync"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/istardevelopers/pluto-theme.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/istardevelopers/pluto-theme/issues"
+  },
+  "homepage": "https://gitlab.com/istardevelopers/pluto-theme#readme"
+}

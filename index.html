@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="stylesheet" href="./assets/css/index.css">
+
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav class="navigation d-flex">
+        <div class="menu-triger d-none align-items-center d-md-flex"><img src="./assets/images/icon-menu.svg" alt="menu"></div>
+        <div class="logo d-flex align-items-center"><img src="./assets/images/logo.svg" alt="#"></div>
+        <ul class="menu-bar d-flex align-items-center d-md-none">
+          <li><a class="menu d-flex align-items-center" href="#"> Collections</a></li>
+          <li><a class="menu d-flex align-items-center" href="#">Men</a></li>
+          <li><a class="menu d-flex align-items-center" href="#">Women</a></li>
+          <li><a class="menu d-flex align-items-center" href="#">About</a></li>
+          <li><a class="menu d-flex align-items-center" href="#">Contact</a></li>
+        </ul>
+        <div class="cart-box d-flex align-items-center">
+          <div class="card"><img src="./assets/images/icon-cart.svg" alt="#"></div>
+          <div class="profile d-xsm-flex align-items-xsm-center"><img src="assets/images/image-avatar.png" width="45" alt="#"></div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <div class="container">
+      <div class="d-flex justify-content-center flex-wrap align-items-lg-center">
+        <div class="product-img w-50 w-md-100">
+          <div class="product-img-inner w-100">
+            <div class="main-img-box">
+              <img class="main-img w-100" src="./assets/images/image-product-1.jpg" alt="#">
+            </div>
+            <div class="img-thumbnail-box d-flex align-items-center justify-content-between d-xsm-none">
+              <img class="w-20 active" src="./assets/images/image-product-1-thumbnail.jpg" height="87" alt="#">
+              <img class="w-20" src="./assets/images/image-product-2-thumbnail.jpg" height="87" alt="#">
+              <img class="w-20" src="./assets/images/image-product-3-thumbnail.jpg" height="87" alt="#">
+              <img class="w-20" src="./assets/images/image-product-4-thumbnail.jpg" height="87" alt="#">
+            </div>
+          </div>
+        </div>
+        <div class="product-discription w-50 w-md-100">
+          <div class="sub-title"> Sneaker Company</div>
+          <h1>Fall Limited Edition Sneakers</h1>
+          <p class="text"> These low-profile sneakers are your perfect casual wear companion. Featuring a
+            durable rubber outer sole, they’ll withstand everything the weather can offer.
+          </p>
+          <div class="prizing-box d-flex flex-wrap align-items-sm-center">
+            <p class="prizing"> $125.00 </p>
+            <div class="discount">50%</div>
+            <p class="orginal-prize w-100">$250.00</p>
+          </div>
+          <div class="d-flex align-items-center flex-sm-wrap">
+            <div class="quantity ">
+              <input class="input w-100" value="0" type="number">
+              <div class="minus">-</div>
+              <div class="plus">+</div>
+            </div>
+            <a class="primary-btn d-flex align-items-center justify-content-center " href="#"> <img src="./assets/images/icon-cart.svg" alt="cart">Add to cart</a>
+          </div>
+        </div>
+      </div>
+  </main>
+
+  <!-- 
+  Sneaker Company
+
+  Fall Limited Edition Sneakers
+
+  These low-profile sneakers are your perfect casual wear companion. Featuring a 
+  durable rubber outer sole, they’ll withstand everything the weather can offer.
+
+  $125.00
+  50%
+  $250.00
+
+  0
+  Add to cart -->
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+
+</html>

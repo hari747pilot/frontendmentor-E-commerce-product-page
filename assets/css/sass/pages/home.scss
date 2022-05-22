@@ -1,0 +1,281 @@
+header {
+    .navigation {
+        border-bottom: 0.5px solid $Grayish-blue;
+
+        .menu-triger {
+            margin-right: 20px;
+            cursor: pointer;
+        }
+
+        .logo {
+            margin: 45px 16px 45px 0;
+        }
+
+        li {
+            height: 100%;
+
+            .menu {
+                margin-right: 30px;
+                height: inherit;
+                border-bottom: 3px solid transparent;
+                transition: all 0.5s;
+                color: $Grayish-blue;
+
+                &:hover {
+                    border-bottom: 3px solid $Orange;
+                    color: $Black;
+                }
+            }
+        }
+
+        .cart-box {
+            margin-left: auto;
+
+            .profile {
+                margin-left: 50px;
+                border-radius: 50%;
+                width: 49px;
+                height: 49px;
+                border: 2px solid transparent;
+                transition: all 0.5s;
+
+                &:hover {
+                    border: 2px solid $Orange;
+                }
+            }
+        }
+    }
+}
+
+.main {
+    padding: 92px 0;
+
+    .product-img-inner {
+        padding: 0 61px 0 47px;
+
+        .main-img {
+            border-radius: 15px;
+        }
+
+        .img-thumbnail-box {
+            margin-top: 30px;
+
+            img {
+                border-radius: 10px;
+                border: 2px solid transparent;
+                transition: all 0.5s;
+
+                &.active {
+                    opacity: 0.5;
+                    border: 2px solid $Orange;
+                }
+
+                &:hover {
+                    opacity: 0.5;
+
+                }
+            }
+        }
+    }
+
+    .product-discription {
+        padding: 63px 45px 0 64px;
+
+        .sub-title {
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            font-size: 14px;
+            color: $Orange;
+            text-transform: uppercase;
+
+        }
+
+        .text {
+            margin-top: 38px;
+            color: $Grayish-blue;
+            line-height: 1.58;
+            font-weight: 500;
+        }
+
+        .prizing-box {
+            margin-top: 30px;
+            margin-bottom: 41px;
+
+            .prizing {
+                font-size: 30px;
+                font-weight: 700;
+            }
+
+            .discount {
+                margin-left: 14px;
+                padding: 5px 10px;
+                font-weight: 700;
+                background-color: $Pale-orange;
+                color: $Orange;
+                height: max-content;
+                border-radius: 7px;
+            }
+
+            .orginal-prize {
+                margin-top: 5px;
+                font-weight: 700;
+                color: $Grayish-blue;
+                text-decoration: line-through;
+
+            }
+
+            p {
+                margin: 0;
+            }
+        }
+
+        .quantity {
+            background: $Light-grayish-blue;
+            position: relative;
+            width: 154px;
+            padding: 27px 0;
+            border-radius: 8px;
+
+            .minus,
+            .plus {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                color: $Orange;
+                font-size: 30px;
+                font-weight: 600;
+                background: transparent;
+                transition: all 0.5s;
+                cursor: pointer;
+                &:hover{
+                    opacity: 0.5;
+                }
+            }
+
+            .minus {
+                left: 0;
+                padding-left: 14px;
+            }
+
+            .plus {
+                right: 0;
+                padding-right: 14px;
+            }
+
+            .input {
+                border: none;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 30px;
+                font-weight: 700;
+                background: transparent;
+                max-width: 40px;
+                text-align: center;
+                font-size: 18px;
+
+                &:focus {
+                    outline: none;
+                }
+
+                &::-webkit-outer-spin-button,
+                &::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .main {
+        .product-img-inner {
+            padding: 0 20px 0px 20px;
+        }
+
+        .product-discription {
+            padding: 0px 35px 0 35px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .main {
+        padding: 30px 0;
+
+        .product-img-inner {
+            padding: 0 0px 40px 0px;
+
+            .main-img {
+                height: 500px;
+                object-fit: cover;
+            }
+
+            .img-thumbnail-box {
+                img {
+                    height: 100px;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        .product-discription {
+            padding: 0;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    header {
+        .navigation {
+            .cart-box {
+                .profile {
+                    margin-left: 30px ;
+                    img{
+                        width: 30px;
+                        height: 30px;
+                        object-fit:contain;
+                    }
+                }
+            }
+        }
+    }
+
+    .main {
+        padding: 0 0 20px;
+
+        .product-img-inner {
+            padding: 0 0 25px 0;
+
+            .main-img {
+                border-radius: 0;
+                height: 375px;
+            }
+        }
+
+        .product-discription {
+            padding: 0 20px;
+
+            .prizing-box {
+                .orginal-prize {
+                    width: unset;
+                    margin-left: auto;
+                }
+            }
+
+            .quantity {
+                width: 100%;
+                margin-bottom: 15px;
+            }
+
+            .primary-btn {
+                width: 100%;
+                min-width: unset;
+                margin: 0;
+            }
+        }
+    }
+}
